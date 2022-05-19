@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lihtne arvutamine</title>
+    <style>
+       body{ font-family: 'Trebuchet MS';   
+       margin:50px;   }
+       
+    </style>
+    <script>
+        var minuvorm = document.forms.minuvorm;
+        
+    </script>
+</head>
+
+<body>
+    <!-- Kasutaja sisestab 2 arvu-->
+    <h3>Maailma lihtsaim vorm 2</h3>
+    <form name="minuvorm">
+        <h4>Harjutame korrutustabelit</h4>
+
+        Sisesta esimene arv:
+        <input type="text" name="arv1" value=""><br><br>
+        Sisesta teine arv:
+        <input type="text" name="arv2" value=""><br><br>
+        Sisesta korrutis:
+        <input type="text" name="korrutis" value=""><br><br>
+        <input type="button" name="nupp" value="Kontrolli tulemust!" onclick="arvuta(this.form)">
+    </form>
+    <p id="tulemus"></p>
+   
+</body>
+
+</html>
