@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let kp = new Date();
+    document.body.innerHTML = "<h1>Today's date is " + kp + "</h1>"
+    </script>
+
+<button onclick="myFunction()">Kliki nupul</button>
+
+<p id="klikk"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Vajuta OK!")) {
+    txt = 'Vajutasid "OK". Tubli!';
+  } else {
+    txt = 'Vajutasid "Cancel". Proovi uuesti';
+  }
+  document.getElementById("klikk").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
